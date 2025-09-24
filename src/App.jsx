@@ -2,8 +2,17 @@ import "./App.css";
 import navimg from "./assets/logo.png";
 import dollar from "./assets/dollar 1.png";
 import bannerimg from "./assets/banner-main.png";
-
+import AvailablePlayers from "./components/AvailablePlayers/AvailablePlayers";
+import SelectedPlayers from "./components/SelectedPlayers/SelectedPlayers";
+import { Suspense, useState } from "react";
+const fetchPlayer = async () => {
+  const res = await fetch("/public/player.json");
+  return await res.json();
+};
 function App() {
+  const playerPromise = fetchPlayer();
+  const [toggle,setToggle]=useState(true);
+ 
   return (
     <>
       <div className="navbar max-w-[1200px] mx-auto">
@@ -32,6 +41,20 @@ function App() {
           </button>
         </div>
       </section>
+      <div className="flex justify-between items-center max-w-[1200px] mx-auto mt-8">
+         <h3 className="text-3xl font-bold">Available Players</h3>
+         <div className="flex  gap-6">
+          <button className={`${toggle&&'bg-[#e7fe29]'} btn `} onClick={()=>setToggle(true)}>Available</button>
+          <button className={`${!toggle&&'bg-[#e7fe29]'} btn `}  onClick={()=>setToggle(false)}>Selected (0)</button>
+         </div>
+         
+      </div>
+      {toggle===true?<Suspense
+        fallback={<span className="loading loading-spinner loading-xl"></span>}
+      >
+        <AvailablePlayers playerPromise={playerPromise}></AvailablePlayers>
+      </Suspense>:<SelectedPlayers></SelectedPlayers>}
+      
     </>
   );
 }
