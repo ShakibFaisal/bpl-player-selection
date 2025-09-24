@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "playerImg": "https://i.ibb.co.com/W4JZCjrW/download.jpg",
+    "playerName": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "playerType": "All-rounder",
+    "rating": 9.5,
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm orthodox spin",
+    "price": 150000
+  },
+  {
+    "id": 2,
+    "playerImg": "https://i.ibb.co.com/CpGtqj5s/images.jpg",
+    "playerName": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "playerType": "Batter",
+    "rating": 8.8,
+    "battingType": "Left-hand bat",
+    "bowlingType": "Right-arm offbreak",
+    "price": 120000
+  },
+  {
+    "id": 3,
+    "playerImg": "https://i.ibb.co.com/5gfqbrWz/Bangladesh-cricketer-Mashrafe-Mortaza.jpg",
+    "playerName": "Mashrafe Mortaza",
+    "country": "Bangladesh",
+    "playerType": "Bowler",
+    "rating": 8.0,
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm medium-fast",
+    "price": 100000
+  },
+  {
+    "id": 4,
+    "playerImg": "https://i.ibb.co.com/5xMZXjX5/images-1.jpg",
+    "playerName": "Andre Russell",
+    "country": "West Indies",
+    "playerType": "All-rounder",
+    "rating": 9.2,
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm fast",
+    "price": 200000
+  },
+  {
+    "id": 5,
+    "playerImg": "https://i.ibb.co.com/bjxVLL02/images-2.jpg",
+    "playerName": "Mushfiqur Rahim",
+    "country": "Bangladesh",
+    "playerType": "Batter",
+    "rating": 8.9,
+    "battingType": "Right-hand bat",
+    "bowlingType": "—",
+    "price": 130000
+  },
+  {
+    "id": 6,
+    "playerImg": "https://i.ibb.co.com/4w5yK6yM/images-3.jpg",
+    "playerName": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "playerType": "Bowler",
+    "rating": 8.7,
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm fast-medium",
+    "price": 140000
+  },
+  {
+    "id": 7,
+    "playerImg": "https://i.ibb.co.com/1JqWxVGc/1xy-FUSj-Sz-Q.webp",
+    "playerName": "Rahkeem Cornwall",
+    "country": "West Indies",
+    "playerType": "All-rounder",
+    "rating": 8.4,
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm offbreak",
+    "price": 115000
+  },
+  {
+    "id": 8,
+    "playerImg": "https://i.ibb.co.com/DHdjqnvX/image-131777-1687011086.jpg",
+    "playerName": "Liton Das",
+    "country": "Bangladesh",
+    "playerType": "Batter",
+    "rating": 8.5,
+    "battingType": "Right-hand bat",
+    "bowlingType": "—",
+    "price": 110000
+  },
+  {
+    "id": 9,
+    "playerImg": "https://i.ibb.co.com/whn09V3v/afif-hossain-has-been-left-out-of-the-bangladesh-squad-for-the-t20i-series-against-ireland.webp",
+    "playerName": "Afif Hossain",
+    "country": "Bangladesh",
+    "playerType": "All-rounder",
+    "rating": 8.3,
+    "battingType": "Left-hand bat",
+    "bowlingType": "Right-arm offbreak",
+    "price": 105000
+  },
+  {
+    "id": 10,
+    "playerImg": "https://i.ibb.co.com/1JJcCNST/gettyimages-1711546154-612x612.jpg",
+    "playerName": "Mahmudullah Riyad",
+    "country": "Bangladesh",
+    "playerType": "All-rounder",
+    "rating": 8.6,
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm offbreak",
+    "price": 125000
+  },
+  {
+    "id": 11,
+    "playerImg": "https://i.ibb.co.com/B5wK7Jj0/Sunil-Narine.jpg",
+    "playerName": "Sunil Narine",
+    "country": "West Indies",
+    "playerType": "All-rounder",
+    "rating": 9.0,
+    "battingType": "Left-hand bat",
+    "bowlingType": "Right-arm offbreak",
+    "price": 190000
+  },
+  {
+    "id": 12,
+    "playerImg": "https://i.ibb.co.com/Z1TR5jz0/gettyimages-689257406-612x612.jpg",
+    "playerName": "Sabbir Rahman",
+    "country": "Bangladesh",
+    "playerType": "Batter",
+    "rating": 7.9,
+    "battingType": "Right-hand bat",
+    "bowlingType": "—",
+    "price": 95000
+  },
+  {
+    "id": 13,
+    "playerImg": "https://i.ibb.co.com/NHHrc5T/images-4.jpg",
+    "playerName": "Rubel Hossain",
+    "country": "Bangladesh",
+    "playerType": "Bowler",
+    "rating": 7.8,
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm fast",
+    "price": 98000
+  },
+  {
+    "id": 14,
+    "playerImg": "https://i.ibb.co.com/xKkNbdDH/images-5.jpg",
+    "playerName": "Ben Cutting",
+    "country": "Australia",
+    "playerType": "All-rounder",
+    "rating": 8.2,
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm fast-medium",
+    "price": 150000
+  },
+  {
+    "id": 15,
+    "playerImg": "https://i.ibb.co.com/HLjPXZrx/211487-3.webp",
+    "playerName": "Nasir Hossain",
+    "country": "Bangladesh",
+    "playerType": "All-rounder",
+    "rating": 7.7,
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm offbreak",
+    "price": 85000
+  }
+]
