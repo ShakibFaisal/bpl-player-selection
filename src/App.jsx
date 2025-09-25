@@ -9,9 +9,17 @@ const fetchPlayer = async () => {
   const res = await fetch("/public/player.json");
   return await res.json();
 };
+ const playerPromise = fetchPlayer();
 function App() {
-  const playerPromise = fetchPlayer();
+ 
   const [toggle,setToggle]=useState(true);
+  const [coin,setCoin]=useState(1000000);
+  const [selectedPlayers,setSelectedPlayers]=useState([]);
+  const removeplayer=(p)=>{
+    const remove=selectedPlayers.filter(ply=>ply.id !=p.id)
+    setSelectedPlayers(remove)
+
+  }
  
   return (
     <>
@@ -23,7 +31,7 @@ function App() {
         </div>
         <div className="flex-none">
           <button className="btn">
-            <span>600000</span>Coin{" "}
+            <span>{coin}</span>Coin{" "}
             <img src={dollar} className="" alt="dollar" />
           </button>
         </div>
@@ -42,18 +50,19 @@ function App() {
         </div>
       </section>
       <div className="flex justify-between items-center max-w-[1200px] mx-auto mt-8">
-         <h3 className="text-3xl font-bold">Available Players</h3>
+         <h3 className="text-3xl font-bold">{toggle===true? "Available Players":`Selected Players(${selectedPlayers.length}/6)`}</h3>
          <div className="flex  gap-6">
           <button className={`${toggle&&'bg-[#e7fe29]'} btn `} onClick={()=>setToggle(true)}>Available</button>
-          <button className={`${!toggle&&'bg-[#e7fe29]'} btn `}  onClick={()=>setToggle(false)}>Selected (0)</button>
+          <button className={`${!toggle&&'bg-[#e7fe29]'} btn `}  onClick={()=>setToggle(false)}>Selected (<span>{selectedPlayers.length}</span>)</button>
          </div>
          
       </div>
       {toggle===true?<Suspense
         fallback={<span className="loading loading-spinner loading-xl"></span>}
       >
-        <AvailablePlayers playerPromise={playerPromise}></AvailablePlayers>
-      </Suspense>:<SelectedPlayers></SelectedPlayers>}
+        <AvailablePlayers setSelectedPlayers={setSelectedPlayers} selectedPlayers={selectedPlayers} coin={coin} setCoin={setCoin} playerPromise={playerPromise}></AvailablePlayers>
+       
+      </Suspense>:<SelectedPlayers removeplayer={removeplayer} selectedPlayers={selectedPlayers}></SelectedPlayers>}
       
     </>
   );
