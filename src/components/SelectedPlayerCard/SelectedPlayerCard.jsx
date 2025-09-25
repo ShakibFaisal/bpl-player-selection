@@ -1,5 +1,4 @@
 
-
 const SelectedPlayerCard = ({player,removeplayer}) => {
     const handlePlayers=()=>{
          removeplayer(player)

@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import logo from "../assets/user 1.png";
 import report from "../assets/report-1.png";
+import { toast } from "react-toastify";
 
 const PlayerCard = ({ player,setCoin,coin,selectedPlayers,setSelectedPlayers }) => {
     const [isSelected,setisSelected]=useState(false);
     const handleCoin=()=>{
        if (coin<player.price) {
-         alert("Not Enough Coin")
+         toast("Not Enough Coin")
        }else{
            setCoin(coin-player.price);
        }
@@ -17,7 +18,7 @@ const PlayerCard = ({ player,setCoin,coin,selectedPlayers,setSelectedPlayers }) 
              setSelectedPlayers(newPlayer)
          }
          else{
-          alert("Already Selected maximum players");
+          toast("Already Selected maximum players");
           setisSelected(false)
          }
     }
