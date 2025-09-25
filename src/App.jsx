@@ -18,6 +18,8 @@ function App() {
   const removeplayer=(p)=>{
     const remove=selectedPlayers.filter(ply=>ply.id !=p.id)
     setSelectedPlayers(remove)
+    const newcoin=coin+p.price;
+    setCoin(newcoin);
 
   }
  
